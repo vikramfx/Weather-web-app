@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/clear.png" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card mx-auto mt-5">
+        <div class="search input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter city name"
+            spellcheck="false"
+            aria-label="Enter city name"
+            aria-describedby="search-button"
+          />
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" id="search-button">
+              <img src="img/search.png" alt="Search" />
+            </button>
+          </div>
+        </div>
+
+        <div class="error">
+          <p>Invalid city name.</p>
+        </div>
+
+        <div class="weather text-center">
+          <img src="img/rain.png" class="weather-icon img-fluid" alt="Weather" />
+          <h1 class="temp display-4">22°C</h1>
+          <h2 class="city h3">New York</h2>
+
+          <div class="details row text-center mt-4">
+            <div class="col-sm-6 col-12 mb-3">
+              <img src="img/humidity.png" alt="Humidity" class="img-fluid" />
+              <div>
+                <p class="humidity h5">50%</p>
+                <p>Humidity</p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-12">
+              <img src="img/wind.png" alt="Wind" class="img-fluid" />
+              <div>
+                <p class="wind h5">15 km/h</p>
+                <p>Wind Speed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pzjw8f+ua7Kw1TIqQU5Y57t1z9Av65Br2I1gjXTtCviIHg1zGAZp6wr6bW/cdn2zr"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
